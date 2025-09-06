@@ -12,6 +12,7 @@ services:
       - ./config:/etc/odoo
       - ./addons:/mnt/extra-addons
       - ./logs:/var/log/odoo
+  - ./custom_addons:/mnt/custom-addons
     environment:
       - HOST=db
       - USER=odoo
